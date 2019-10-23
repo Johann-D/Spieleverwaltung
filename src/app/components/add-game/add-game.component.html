@@ -1,0 +1,24 @@
+<h2>Spiel hinzufügen</h2>
+<hr>
+<form>
+  <div class="form-group">
+    <label for="idInput">ID</label>
+    <input type="number" class="form-control" id="idInput" name="idInput" aria-describedby="emailHelp"
+      placeholder="Spiel ID" [(ngModel)]="id">
+  </div>
+  <div class="form-group">
+    <label for="labelInput">Beschreibung</label>
+    <input type="text" class="form-control" id="labelInput" name="labelInput" placeholder="World of Warcraft Classic"
+      [(ngModel)]="label">
+  </div>
+  <div class="form-group">
+    <label for="genreInput">Genre</label>
+    <input type="text" class="form-control" id="genreInput" name="genreInput" placeholder="KP" [(ngModel)]="genre">
+  </div>
+  <div class="form-group">
+    <label for="fskInput">FSK</label>
+    <input type="number" class="form-control" id="fskInput" name="fskInput" placeholder="FSK Freigabe"
+      [(ngModel)]="fsk">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="addGame()">Hinzufügen</button>
+</form>
